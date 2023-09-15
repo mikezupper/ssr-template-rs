@@ -1,0 +1,29 @@
+[package]
+name = "ssr-template-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Framework Level Deps
+dotenv = "0.15.0"
+tokio = { version = "1.32.0", features = ["full"] }
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
+eyre= "0.6.8"
+
+# Http framework Deps
+axum = { version = "0.6.20"}
+tower-http = { version = "0.4.3", features = ["full"] }
+tower = { version = "0.4.13", features = ["full"] }
+#reqwest ="0.11.20"
+
+# Templating Server Side
+askama = "0.12"
+include_dir = "0.7.3"
+mime_guess = "2.0.4"
+
+# utilities
+serde_json="1.0.105"
+serde={version="1.0.188",features=["derive"]}
